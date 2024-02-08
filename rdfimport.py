@@ -13,8 +13,8 @@ def print_with_border(text):
     """
     lines = text.split('\n')
     max_length = max(len(line) for line in lines)
-    top_border = '┌' + '─' * (max_length + 3) + '┐'
-    bottom_border = '└' + '─' * (max_length + 3) + '┘'
+    top_border = '╭' + '─' * (max_length + 3) + '╮'
+    bottom_border = '╰' + '─' * (max_length + 3) + '╯'
     side_border = '│'
 
     print(top_border)
